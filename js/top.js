@@ -1,17 +1,31 @@
 
-
+	 var str1="";
 
 
 	function getD(data){
 			 console.log(data)
 		 var d=data.results[0];
-		 var str1="";
+		
 		  var str2="";
 		   var str3="";
 		   var bb="";
 		 var w=d.weather_data;
 
-		  setInterval(function(){
+	   	str2=" 温度："+w[0].temperature;
+		 	str3="天气："+w[0].weather;
+            $('.span2').html(str2);
+            $('.span3').html(str3);
+            
+ 
+		  		
+		  
+
+	}
+	
+	
+	
+	
+	setInterval(function(){
 
 	  	 var a=new Date;
 
@@ -32,19 +46,11 @@
 	      
 		  	c="0"+c;
 		  }
-		  
-	   str1=yy+"-"+mm+"-"+tiant+" "+b+":"+c+":"+dd+" "+week;
+
+	  str1=yy+"-"+mm+"-"+tiant+" "+b+":"+c+":"+dd+" "+week;
 	    $('.span1').html(str1);
-	    
-	   	str2=" 温度："+w[0].temperature;
-		 	str3="天气："+w[0].weather;
-            $('.span2').html(str2);
-            $('.span3').html(str3);
-            
-            
-	   
-	   //获取询盘邮件即时信息时间
-        var t=a.getTime()-24*60*60*1000;
+ //获取询盘邮件即时信息时间
+var t=a.getTime()-24*60*60*1000;
 	  	var aa=new Date(t);
 	  	
 	  	 var y=aa.getFullYear();
@@ -55,9 +61,5 @@
           bb=y+"年"+m+"月"+tian+"日";
 		   $('.riqi').html(bb);
 		  		
-		  },1000)
-
-	}
-
-
-
+	
+},1000)
