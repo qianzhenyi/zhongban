@@ -2,28 +2,28 @@
 	 var str1="";
 
 
-	function getD(data){
-			 console.log(data)
-		 var d=data.results[0];
-		
-		  var str2="";
-		   var str3="";
-		   var bb="";
-		 var w=d.weather_data;
-
-	   	str2=" 温度："+w[0].temperature;
-		 	str3="天气："+w[0].weather;
-            $('.span2').html(str2);
-            $('.span3').html(str3);
-            
- 
-		  		
-		  
-
-	}
-	
-	
-	
+//	function getD(data){
+//			 console.log(data)
+//		 var d=data.results[0];
+//		
+//		  var str2="";
+//		   var str3="";
+//		   var bb="";
+//		 var w=d.weather_data;
+//
+//	   	str2=" 温度："+w[0].temperature;
+//		 	str3="天气："+w[0].weather;
+//          $('.span2').html(str2);
+//          $('.span3').html(str3);
+//          
+// 
+//		  		
+//		  
+//
+//	}
+//	
+//	
+//	
 	
 	setInterval(function(){
 
