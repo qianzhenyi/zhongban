@@ -425,7 +425,7 @@ option[0] = {
 								}
 							},
                             type: 'category',
-                            data: ['湖南省','上海市','天津市','湖北省','安徽省','江西省','浙江省','江苏省','江苏省','辽宁省','黑龙江省','吉林省','广东省','福建省','贵州省','甘肃省']
+                            data: ['湖南省','上海市','天津市','湖北省','安徽省','江西省','浙江省','江苏省','辽宁省','黑龙江省','吉林省','广东省','福建省','贵州省','甘肃省']
                         }
                     ],
                     yAxis: [
@@ -443,17 +443,19 @@ option[0] = {
 								show:false
 							},
                             type: 'value',
+                            min:0,max:2000,
                             interval: 500,
                             axisLabel: {
-                            	interval: 0,
-                            	showMaxLabel:false,
-                            	showMinLabel:true,
                             	margin:2,
                             	textStyle:{
                             		fontSize:'50%',
                             	},
                                 formatter: '{value} '
                             }
+                        },
+                        {
+                        	min:0,max:1,interval:0.1,
+            				show:false,
                         }
                     ],
                     series: [
@@ -469,12 +471,12 @@ option[0] = {
 								}
 							},
                             barWidth:'30%',
-                            data:[700, 1000, 950, 800, 950, 850, 900, 1000, 600, 950, 820, 760, 710, 900, 750, 800]
+                            data:[700, 1000, 950, 800, 950, 850, 900, 1000, 600, 950, 820, 760, 710, 900, 750]
                         },
                         {
                             name:'同期环比曲线',
                             type:'line',
-                            
+                            yAxisIndex: 1,
                             symbol:'circle',
                             lineStyle:{
                             	normal:{
@@ -483,7 +485,7 @@ option[0] = {
                             		color:'#d9c076'
                             	},
                             },
-                            data:[850, 1150, 1100, 1000, 1100, 950, 1100, 1100, 800, 1200, 1300, 1510, 1400, 1450, 1400, 1550]
+                            data:[0.5,0.6,0.4,0.5,0.7,0.7,0.8,0.8,0.5,0.6,0.4,0.5,0.3,0.8,0.5]
                         }
                     ]
            };
@@ -569,6 +571,10 @@ option[0] = {
                             	},
                                 formatter: '{value} '
                             }
+                        },
+                        {
+                        	min:0,max:1,interval:0.1,
+            				show:false,
                         }
                     ],
                     series: [
@@ -597,7 +603,8 @@ option[0] = {
                             		color:'#d9c076'
                             	},
                             },
-                            data:[8500, 11500, 11000, 10000, 11000, 9500, 11000, 11000, 8000, 12000, 13000, 15100]
+                            yAxisIndex: 1,
+                            data:[0.5,0.6,0.4,0.5,0.7,0.7,0.8,0.8,0.5,0.6,0.4,0.5]
                         }
                     ]
           }; 
@@ -796,7 +803,6 @@ option[0] = {
             	height:'40%',
 					title : {
 				    text: '主要省份产品满意度（%）',
-//				    textAlign:'left',
 				    left: '1%',
 				    top:'1%',
 				    textStyle : {
@@ -811,12 +817,10 @@ option[0] = {
                     },
                     legend: {
                         data:['采购量','同期环比曲线'],
-//                      left:'60%',
                         top:'14%',
                         right:'4%',
                         textStyle:{
 				        	color:'#fff',
-		//		        	fontSize:
 				        },
                     },
                     xAxis: [
@@ -861,6 +865,8 @@ option[0] = {
 							},
                             type: 'value',
                             interval: 20,
+                            max:100,
+                            min:0,
                             axisLabel: {
                             	show:true,
                             	interval:0,
@@ -870,8 +876,11 @@ option[0] = {
                             	textStyle:{
                             		fontSize:'50%',
                             	},
-//                              formatter: '{value} '
                             }
+                        },
+                        {
+                        	min:0,max:1,interval:0.1,
+            				show:false,
                         }
                     ],
                     series: [
@@ -882,7 +891,6 @@ option[0] = {
                             itemStyle: {
                                 normal: {
 							        color: function(params) {
-                                        // build a color map as your need.
                                         var colorList=[{
 									    type: 'linear',
 									    x: 0,
@@ -1000,7 +1008,8 @@ option[0] = {
                             		color:'#d9c076'
                             	},
                             },
-                            data:[80, 89, 90, 95, 88, 87, 93, 90]
+                            yAxisIndex: 1,
+                            data:[0.5,0.6,0.4,0.5,0.7,0.7,0.8,0.8,0.5,0.6,0.4,0.5,0.3,0.8,0.5]
                         }
                     ]
            };
