@@ -636,7 +636,7 @@ option[0] = {
 		        right:'4%',
 		        top:'20%',
 		        orient:'vertical',
-		        data:['环保    ','建筑    ','能源    ','有色金属','食品    ','核能    ',	'交通    ','航空航天'],
+		        data:['环保','建筑','能源','有色金属','食品','核能',	'交通','航空航天'],
 		        textStyle:{
 		        	color:'#fff',
 		        },
@@ -676,7 +676,6 @@ option[0] = {
 		            itemStyle: {
                                 normal: {
 							        color: function(params) {
-                                        // build a color map as your need.
                                         var colorList=[{
 									    type: 'linear',
 									    x: 0,
@@ -781,13 +780,13 @@ option[0] = {
                                },
                             },
 		            data:[
-		                {value:10, name:'环保    '},
-		                {value:5, name:'建筑    '},
-		                {value:15, name:'能源    '},
+		                {value:10, name:'环保'},
+		                {value:5, name:'建筑'},
+		                {value:15, name:'能源'},
 		                {value:25, name:'有色金属'},
-		                {value:20, name:'食品    '},
-		                {value:35, name:'核能    '},
-		                {value:40, name:'交通    '},
+		                {value:20, name:'食品'},
+		                {value:35, name:'核能'},
+		                {value:40, name:'交通'},
 		                {value:30, name:'航空航天'}
 		            ]
 		        }
@@ -825,20 +824,15 @@ option[0] = {
                     },
                     xAxis: [
                         {
-//                      	nameGap:20,
 							axisTick:{
 								show:false    
 							},
                         	axisLabel:{
                         		interval:0,   //强制显示所有坐标
-//                      		rotate:30,
                         		textStyle:{
                         			fontWeight:'lighter'
                         		}
                         	},
-//                      	nameTextStyle: {
-//                      		color: '#fff'
-//                      	},
 							axisLine:{
 								lineStyle:{
 									color:'#fff',
