@@ -50,13 +50,17 @@ table tr{
 	background:#b72322;
 	display: block;
 	display: flex;
-	height:4%;
+	height:18px;
+	line-height: 18px;
 /*	height:17px;*/
 }
 
 table td{
 /*    padding: 0 30px;*/
     width:26%;
+    /*height:23px;
+    line-height: 23px;*/
+    display: inline-block;
  /*   text-align: left;*/
     flex:1;
 }
@@ -89,4 +93,12 @@ a:hover{
 	table tr{
 		height:4.5%;
 	}
+	}
+@media only screen and (min-width: 1600px){
+	table tr{
+		height:22px;
+    	line-height: 22px;
+
+	}
+
 	}
