@@ -1,5 +1,5 @@
 
-//		window.onresize = function(){
+
 			var option=[];
 		
 	
@@ -251,14 +251,12 @@ var series = [];
                 textStyle:{
                 	fontSize:16,
                 },
-//              formatter: {
-//				    data: convertData(BJData),
-//              },
+
                 
             },
         },
         symbolSize: function (val) {
-        	console.log(val);
+        
             return val[2] / 8;
         },
         data: BJData.map(function (dataItem) {
@@ -321,11 +319,7 @@ option[0] = {
 			silent:true,
 			left:'10%',
 			top:'15%',
-//			roam: true,
-//			scaleLimit:{
-//				min:1,
-//				max:3,
-//			},
+
 			label: {
 				normal: {
 					show: false,
@@ -353,11 +347,7 @@ option[0] = {
         map: 'china',
 		left:'10%',
 		top:'15%',
-//      roam: true,
-//		scaleLimit:{
-//				min:1,
-//				max:3,
-//			},
+
         label: {
             emphasis: {
                 show: true,
@@ -1075,7 +1065,7 @@ option[0] = {
 			oShadeInner.removeChild(oBox);
 			oRedu.setAttribute("class","reduce hidden");
 		}
-//		};	
+
 		
 		
 		

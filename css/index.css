@@ -159,7 +159,7 @@ header>div:nth-child(2) {
 .bottom_line {
 	width: 95%;
 	height: 100%;
-	opacity: 1;
+	visibility: visible;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -168,7 +168,7 @@ header>div:nth-child(2) {
 .bottom_line1 {
 	width: 95%;
 	height: 100%;
-	opacity: 0;
+	visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -177,13 +177,11 @@ header>div:nth-child(2) {
 .bottom_line2 {
 	width: 95%;
 	height: 100%;
-	opacity: 0;
+	visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-
-
 /***********************se2*********************************/
 
 .section2 {
@@ -1093,7 +1091,7 @@ header>div:nth-child(2) {
 .bottom_line {
 	width: 95%;
 	height: 100%;
-	opacity: 1;
+	visibility: visible;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1102,7 +1100,7 @@ header>div:nth-child(2) {
 .bottom_line1 {
 	width: 95%;
 	height: 100%;
-	opacity: 0;
+	visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1111,7 +1109,7 @@ header>div:nth-child(2) {
 .bottom_line2 {
 	width: 95%;
 	height: 100%;
-	opacity: 0;
+	visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;

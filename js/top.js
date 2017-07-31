@@ -1,7 +1,7 @@
 
 	 var str1="";
 
-
+//
 //	function getD(data){
 //			 console.log(data)
 //		 var d=data.results[0];
@@ -23,7 +23,7 @@
 //	}
 //	
 //	
-//	
+	
 	
 	setInterval(function(){
 
