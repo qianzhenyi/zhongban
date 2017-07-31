@@ -185,6 +185,9 @@ body {
 		font-weight: bold;
 		padding: 10px 0 0 55px;
 	}
+	.DIan .Si .YID{
+		margin-left:0.5%;
+	}
 	.Si .Si-Yi {
 		width: 80%;
 		border-radius: 50px;
@@ -456,6 +459,9 @@ body {
 		font-weight: bold;
 		padding: 10px 0 0 55px;
 	}
+	.DIan .Si .YID{
+		margin-left:0.5%;
+	}
 	.Si .Si-Yi {
 		width: 80%;
 		border-radius: 50px;
@@ -499,7 +505,7 @@ body {
 	}
 	.top .left,
 	.top .right {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	.top .mid {
 		padding: 0 8%;
@@ -726,6 +732,9 @@ body {
 		font-weight: bold;
 		padding: 0px 0 0 65px;
 	}
+	.DIan .Si .YID{
+		margin-left:0.5%;
+	}
 	.Si .Si-Yi {
 		width: 80%;
 		border-radius: 50px;
@@ -740,6 +749,7 @@ body {
 		cursor: pointer;
 		padding-right: 2%;
 		margin-left: 3%;
+		text-align: left;
 		font-size: 12px;
 	}
 	.Si .Si-Yi .Yi-A {
@@ -770,7 +780,7 @@ body {
 	}
 	.top .left,
 	.top .right {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.top .mid {
 		padding: 0 8%;
@@ -997,6 +1007,9 @@ body {
 		font-size: 16px;
 		font-weight: bold;
 		padding: 10px 0 0 55px;
+	}
+	.DIan .Si .YID{
+		margin-left:0.5%;
 	}
 	.Si .Si-Yi {
 		width: 80%;

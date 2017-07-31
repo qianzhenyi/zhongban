@@ -141,7 +141,7 @@ var Ming = echarts.init(document.querySelector('.Ming'));
 		},
  	title:{
  		x:'top',
- 		text:'2017山东省采购趋势量',
+ 		text:'2017山东省采购趋势量：',
  		textStyle:{
  			color:'#dfb050',
  			fontSize:15,
@@ -149,6 +149,15 @@ var Ming = echarts.init(document.querySelector('.Ming'));
  	},
  	tooltip:{
  		trigger:'axis',
+ 	},
+ 	legend:{
+ 		data:['山东采购趋势量'],
+ 		right:'8%',
+ 		top:'9%',
+ 		textStyle:{
+ 			fontSize:12,
+ 			color:'#fff',
+ 		}
  	},
 	xAxis:[{
 		type:'category',
@@ -162,6 +171,7 @@ var Ming = echarts.init(document.querySelector('.Ming'));
 	}],
 	series:[
 	    {
+	    	name:'山东采购趋势量',
 	    	type:'line',
 	    	itemStyle:{
 	    		normal:{
@@ -200,6 +210,15 @@ var Zha = echarts.init(document.querySelector('.Zha'));
 		tooltip:{
 			trigger:'axis'
 		},
+	legend:{
+ 		data:['用户总数量','成交总数量'],
+ 		right:'10%',
+ 		top:'9%',
+ 		textStyle:{
+ 			fontSize:12,
+ 			color:'#fff',
+ 		}
+ 	},
 		xAxis:[{
 			type:'category',
 		    data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']

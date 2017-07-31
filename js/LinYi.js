@@ -150,6 +150,18 @@ var Ming = echarts.init(document.querySelector('.Ming'));
  	tooltip:{
  		trigger:'axis',
  	},
+ 	tooltip:{
+ 		trigger:'axis',
+ 	},
+ 	legend:{
+ 		data:['临沂采购趋势量'],
+ 		right:'8%',
+ 		top:'12%',
+ 		textStyle:{
+ 			fontSize:12,
+ 			color:'#fff',
+ 		}
+ 	},
 	xAxis:[{
 		type:'category',
 		data:['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
@@ -162,6 +174,7 @@ var Ming = echarts.init(document.querySelector('.Ming'));
 	}],
 	series:[
 	    {
+	    	name:'临沂采购趋势量',
 	    	type:'line',
 	    	itemStyle:{
 	    		normal:{
@@ -199,6 +212,15 @@ var Zha = echarts.init(document.querySelector('.Zha'));
 		tooltip:{
 			trigger:'axis'
 		},
+		legend:{
+ 		data:['用户总数量','成交总数量'],
+ 		right:'10%',
+ 		top:'9%',
+ 		textStyle:{
+ 			fontSize:12,
+ 			color:'#fff',
+ 		}
+ 	},
 		xAxis:[{
 			type:'category',
 		    data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
